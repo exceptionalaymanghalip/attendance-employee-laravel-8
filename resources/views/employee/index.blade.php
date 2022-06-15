@@ -21,15 +21,27 @@
                 <thead>
                 <tr>
                     <th>#</th>
-                    <th>Title</th>
-                    <th>Action</th>
+                    <th>Department</th>
+                    <th>Full Name</th>
+                    <th>photo</th>
+                    <th>period</th>
+                    <th>mobile</th>
+                    <th>job</th>
+                    <th>age</th>
+                    <th>status</th>
                 </tr>
                 </thead>
                 <tfoot>
                 <tr>
                     <th>#</th>
-                    <th>Title</th>
-                    <th>Action</th>
+                    <th>Department</th>
+                    <th>Full Name</th>
+                    <th>photo</th>
+                    <th>period</th>
+                    <th>mobile</th>
+                    <th>job</th>
+                    <th>age</th>
+                    <th>status</th>
                 </tr>
                 </tfoot>
                 <tbody>
@@ -37,7 +49,13 @@
                     @foreach($data as $d)
                 <tr>
                     <td>{{$d ->id}}</td>
-                    <td>{{$d ->title}}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td>
                         <a href="{{url('depart/'.$d->id)}}" class="btn btn-warning btn-sm">Show</a>
                         <a href="{{url('depart/'.$d->id.'/edit')}}" class="btn btn-info btn-sm">Update</a>

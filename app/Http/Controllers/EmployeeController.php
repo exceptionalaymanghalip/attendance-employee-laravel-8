@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Employee;
 use Illuminate\Http\Request;
-use App\Models\Department;
 
-class  DepartmentController extends Controller
+class EmployeeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class  DepartmentController extends Controller
      */
     public function index()
     {
-        $data = Department::orderBy('id','desc')->get();
-        return view('department.index',['data'=>$data]);
+        $data = Employee::orderBy('id','desc')->get();
+        return view('employee.index',['data'=>$data]);
     }
 
     /**
@@ -25,7 +25,7 @@ class  DepartmentController extends Controller
      */
     public function create()
     {
-        return view('department.create');
+        //
     }
 
     /**
@@ -36,15 +36,7 @@ class  DepartmentController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'title' =>'required'
-        ]);
-
-        $data = new Department();
-        $data->title=$request->title;
-        $data->save();
-
-        return redirect('depart/create')->with('msg','Data has been submitted');
+        //
     }
 
     /**
@@ -55,8 +47,7 @@ class  DepartmentController extends Controller
      */
     public function show($id)
     {
-        $data =Department::find($id);
-        return view('department.show',['data'=>$data]);
+        //
     }
 
     /**
@@ -67,8 +58,7 @@ class  DepartmentController extends Controller
      */
     public function edit($id)
     {
-        $data = Department::find($id);
-        return view('department.edit',['data'=>$data]);
+        //
     }
 
     /**
@@ -80,15 +70,7 @@ class  DepartmentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $request->validate([
-            'title' =>'required'
-        ]);
-
-        $data =Department::find($id);
-        $data->title=$request->title;
-        $data->save();
-
-        return redirect('depart/'.$id.'/edit')->with('msg','Data has been updated');
+        //
     }
 
     /**
@@ -99,8 +81,6 @@ class  DepartmentController extends Controller
      */
     public function destroy($id)
     {
-
-        Department::where('id',$id)->delete();
-        return redirect('depart')->with('msg','Data has been deleted');
+        //
     }
 }

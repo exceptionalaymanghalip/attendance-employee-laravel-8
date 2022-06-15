@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DepartmentController;
+use App\Http\Controllers\EmployeeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +28,7 @@ Route::get('admin/logout',[AdminController::class,'logout']);
 // DepartmentController
 Route::get('depart/{id}/delete',[DepartmentController::class,'destroy']);
 Route::resource('depart',DepartmentController::class);
+
+// EmployeeController
+Route::get('employee/{id}/delete',[EmployeeController::class,'destroy']);
+Route::resource('employee',EmployeeController::class);
