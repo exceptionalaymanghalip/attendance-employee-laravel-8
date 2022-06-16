@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Department;
 use App\Models\Employee;
 use Illuminate\Http\Request;
 
@@ -25,7 +26,8 @@ class EmployeeController extends Controller
      */
     public function create()
     {
-        //
+        $data = Department::orderBy('id','desc')->get();
+        return view('employee.create',['departments'=>$data]);
     }
 
     /**
@@ -36,7 +38,33 @@ class EmployeeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'full_name' =>'required',
+            'period' =>'required',
+            'photo' =>'required|image|mimes:jpeg,png,gif',
+            'password' =>'required',
+            'mobile' =>'required',
+            'job' =>'required',
+            'status' =>'required',
+        ]);
+        $photo = $request->file('photo');
+        $renamePhoto = time().'.'.$photo->getClientOriginalExtension();
+        $dest = public_path('images');
+        $photo->move($dest,$renamePhoto);
+
+        $data = new Employee();
+        $data->department_id=$request->depart;
+        $data->full_name=$request->full_name;
+        $data->period=$request->period;
+        $data->photo=$request->photo;
+        $data->password=$request->password;
+        $data->mobile=$request->mobile;
+        $data->job=$request->job;
+        $data->age=$request->age;
+        $data->status=$request->status;
+        $data->save();
+
+        return redirect('employee/create')->with('msg','Data has been submitted');
     }
 
     /**
@@ -47,7 +75,8 @@ class EmployeeController extends Controller
      */
     public function show($id)
     {
-        //
+        $data =Employee::find($id);
+        return view('employee.show',['data'=>$data]);
     }
 
     /**
@@ -58,7 +87,10 @@ class EmployeeController extends Controller
      */
     public function edit($id)
     {
-        //
+        $departs = Department::orderBy('id','desc')->get(); // to get deopartments
+        $data = Employee::find($id);
+        return view('employee.edit',['departs'=>$departs, 'data'=>$data]);
+
     }
 
     /**
@@ -70,7 +102,40 @@ class EmployeeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'full_name' =>'required',
+            'period' =>'required',
+            'password' =>'required',
+            'mobile' =>'required',
+            'job' =>'required',
+            'status' =>'required',
+        ]);
+
+        if($request->hasFile('photo')){
+            $photo = $request->file('photo');
+            $renamePhoto = time().'.'.$photo->getClientOriginalExtension();
+            $dest = public_path('images');
+            $photo->move($dest,$renamePhoto);
+        }
+        else{
+            $renamePhoto=$request->prev_photo;
+        }
+
+
+
+        $data =  Employee::find($id);
+        $data->department_id=$request->depart;
+        $data->full_name=$request->full_name;
+        $data->period=$request->period;
+        $data->photo=$request->photo;
+        $data->password=$request->password;
+        $data->mobile=$request->mobile;
+        $data->job=$request->job;
+        $data->age=$request->age;
+        $data->status=$request->status;
+        $data->save();
+
+        return redirect('employee/'.$id.'/edit')->with('msg','Data has been submitted');
     }
 
     /**
@@ -81,6 +146,7 @@ class EmployeeController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Employee::where('id',$id)->delete();
+        return redirect('employee')->with('msg','Data has been deleted');
     }
 }
