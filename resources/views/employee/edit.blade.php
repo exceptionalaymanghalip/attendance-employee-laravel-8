@@ -27,7 +27,7 @@
                             <select name="depart" class="form-control">
                                 <option value="">-- Select Department --</option>
                                 @foreach($departs as $depart)
-                                    <option @if($depart->id == $data->department_id) Selected @endif value="{{$depart->id}}">{{$depart->title}}</option>
+                                    <option @if($depart->id==$data->department_id) selected @endif value="{{$depart->id}}">{{$depart->title}}</option>
                                 @endforeach
                             </select>
                         </td>
@@ -75,7 +75,7 @@
                     <tr>
                         <th>Age</th>
                         <td>
-                            <input type="text" value="{{$data->job}}" name="age" class="form-control">
+                            <input type="text" value="{{$data->age}}" name="age" class="form-control">
                         </td>
                     </tr>
                     <tr>

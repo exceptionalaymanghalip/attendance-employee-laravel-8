@@ -114,16 +114,15 @@ class EmployeeController extends Controller
         if($request->hasFile('photo')){
             $photo = $request->file('photo');
             $renamePhoto = time().'.'.$photo->getClientOriginalExtension();
-            $dest = public_path('images');
+            $dest = public_path('/images');
             $photo->move($dest,$renamePhoto);
         }
         else{
             $renamePhoto=$request->prev_photo;
         }
-
-
-
-        $data =  Employee::find($id);
+//        $id = $request->input('id');
+//        $Employee = new Employee();
+        $data = Employee::find($id);
         $data->department_id=$request->depart;
         $data->full_name=$request->full_name;
         $data->period=$request->period;
