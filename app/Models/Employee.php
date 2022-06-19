@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Employee extends Model
 {
     use HasFactory;
-    function department(){
+     function department(){
         // relationship between emplloyees and department
         return $this->belongsTo(Department::class);
     }

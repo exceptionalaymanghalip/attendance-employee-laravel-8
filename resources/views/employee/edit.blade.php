@@ -17,7 +17,7 @@
             @if(Session::has('msg'))
                 <p class="text-success">{{session('msg')}}</p>
             @endif
-            <form method="post"  action="{{url('employee/.$data->id')}}"  enctype="multipart/form-data">
+            <form method="post"  action="{{url('employee',$data->id)}}"  enctype="multipart/form-data">
                 @method('put')
                 @csrf
                 <table class="table table-bordered">
