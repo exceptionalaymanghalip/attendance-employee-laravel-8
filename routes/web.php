@@ -37,4 +37,5 @@ Route::resource('employee',EmployeeController::class);
 
 // AttendanceController
 //Route::get('attendance/{id}/delete',[AttendanceController::class,'destroy']);
+//Route::resource('attendance',AttendanceController::class);
 Route::resource('attendance',AttendanceController::class);

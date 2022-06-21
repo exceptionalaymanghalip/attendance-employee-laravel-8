@@ -51,7 +51,7 @@
                     <td>{{$d ->date}}</td>
                     <td>{{$d ->day}}</td>
 {{--                    <td>{{$d ->location}}</td>--}}
-                    <td><button><a href="#" /> </button></td>
+                    <td><a href="attendance/location" />location</td>
                 </tr>
                 @endforeach
                     @endif
