@@ -32,3 +32,7 @@ Route::resource('depart',DepartmentController::class);
 // EmployeeController
 Route::get('employee/{id}/delete',[EmployeeController::class,'destroy']);
 Route::resource('employee',EmployeeController::class);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
