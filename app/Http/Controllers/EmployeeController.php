@@ -49,7 +49,7 @@ class EmployeeController extends Controller
         ]);
         $photo = $request->file('photo');
         $renamePhoto = time().'.'.$photo->getClientOriginalExtension();
-        $dest = public_path('images');
+        $dest = public_path('/images');
         $photo->move($dest,$renamePhoto);
 
         $data = new Employee();
@@ -97,7 +97,7 @@ class EmployeeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -110,13 +110,18 @@ class EmployeeController extends Controller
             'job' =>'required',
             'status' =>'required',
         ]);
+<<<<<<< HEAD
         $data =  Employee::find($id);
         $renamePhoto = '';
+=======
+        $data = Employee::find($id);
+        $renamePhoto = "";
+>>>>>>> 2e83b72f9b3135f249f8175c01938332d2f9bdc4
 
         if($request->hasFile('photo')){
             $photo = $request->file('photo');
             $renamePhoto = time().'.'.$photo->getClientOriginalExtension();
-            $dest = public_path('images');
+            $dest = public_path('/images');
             $photo->move($dest,$renamePhoto);
 
             $data->photo=$request->photo;

@@ -3,8 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="790ffe79-359f-4ceb-ab1f-4ddf9e447b5b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/resources/views/attendance/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/attendance/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+>>>>>>> 2e83b72f9b3135f249f8175c01938332d2f9bdc4
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +152,7 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -149,8 +160,17 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/wamp64/www/attendance with auth 02",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> 2e83b72f9b3135f249f8175c01938332d2f9bdc4
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\attendance system 01\resources\views" />
@@ -191,12 +211,21 @@
       <workItem from="1655290257528" duration="3669000" />
       <workItem from="1655360047082" duration="3873000" />
       <workItem from="1655363956267" duration="9348000" />
+<<<<<<< HEAD
       <workItem from="1655630795291" duration="1719000" />
       <workItem from="1655637023332" duration="39000" />
       <workItem from="1655637261549" duration="479000" />
       <workItem from="1655711942049" duration="13266000" />
       <workItem from="1655791335370" duration="6640000" />
       <workItem from="1655798880944" duration="1538000" />
+=======
+      <workItem from="1655533322419" duration="17581000" />
+      <workItem from="1655618728998" duration="8666000" />
+      <workItem from="1655629814165" duration="199000" />
+      <workItem from="1655630029243" duration="48000" />
+      <workItem from="1655630158772" duration="1212000" />
+      <workItem from="1655640528148" duration="42000" />
+>>>>>>> 2e83b72f9b3135f249f8175c01938332d2f9bdc4
     </task>
     <servers />
   </component>
