@@ -1,0 +1,60 @@
+[33mcommit 5182d87255f800258e162ee07d7f10dd9acb42f2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: c559785 2e83b72
+Author: exceptionalaymanghalip <pro.aymanghalip@gmail.com>
+Date:   Tue Jun 21 11:50:45 2022 +0300
+
+    finish attendance02
+
+[33mcommit c559785c1d87a1eead9b989f5eb9a45a080fcaf8[m
+Author: exceptionalaymanghalip <pro.aymanghalip@gmail.com>
+Date:   Tue Jun 21 11:44:26 2022 +0300
+
+    finish attendance
+
+[33mcommit 2e83b72f9b3135f249f8175c01938332d2f9bdc4[m
+Author: exceptionalaymanghalip <pro.aymanghalip@gmail.com>
+Date:   Tue Jun 21 11:08:51 2022 +0300
+
+    finish attendance
+
+[33mcommit ac8eaf466199a9cbcb948f9e7dfd8a7fecd47902[m
+Author: exceptionalaymanghalip <pro.aymanghalip@gmail.com>
+Date:   Tue Jun 21 10:59:34 2022 +0300
+
+    finish attendance
+
+[33mcommit 6e245f9bf75bdb95afd83c3bf78987f6abeb3f32[m
+Author: exceptionalaymanghalip <pro.aymanghalip@gmail.com>
+Date:   Sun Jun 19 10:07:33 2022 +0300
+
+    finish employee & department
+
+[33mcommit 3978a60086e0ad9387b78e1f25c83cc598a4a41d[m
+Author: exceptionalaymanghalip <pro.aymanghalip@gmail.com>
+Date:   Sat Jun 18 14:34:43 2022 +0300
+
+    finish emplyee operation
+
+[33mcommit 3c40f59af5ec561a844ac7ebbad9e3fe0fd2d018[m
+Author: exceptionalaymanghalip <pro.aymanghalip@gmail.com>
+Date:   Thu Jun 16 12:30:10 2022 +0300
+
+    finish  employee
+
+[33mcommit d761285a48b1b17b65db1f4ff9526e18851ed9a3[m
+Author: pro.aymanghalip <pro.aymanghalip@gmail.com>
+Date:   Wed Jun 15 16:02:46 2022 +0300
+
+    strting employee
+
+[33mcommit 62ccd455ba6d2794d0fc0d2c137776b1a4976e18[m
+Author: engaymanghalip <eng.aymann1@gmail.com>
+Date:   Tue Jun 14 12:52:35 2022 +0300
+
+    finish delete department
+
+[33mcommit e6aae084c96292f735957f37fe1b29d68d5c200a[m
+Author: engaymanghalip <eng.aymann1@gmail.com>
+Date:   Mon Jun 13 15:36:30 2022 +0300
+
+    finish admin login

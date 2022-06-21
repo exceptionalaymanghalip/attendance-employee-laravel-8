@@ -34,14 +34,9 @@ Route::resource('depart',DepartmentController::class);
 Route::get('employee/{id}/delete',[EmployeeController::class,'destroy']);
 Route::resource('employee',EmployeeController::class);
 
-<<<<<<< HEAD
 
 // AttendanceController
 //Route::get('attendance/{id}/delete',[AttendanceController::class,'destroy']);
 //Route::resource('attendance',AttendanceController::class);
 Route::resource('attendance',AttendanceController::class);
-=======
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
->>>>>>> 2e83b72f9b3135f249f8175c01938332d2f9bdc4

@@ -110,33 +110,33 @@ class EmployeeController extends Controller
             'job' =>'required',
             'status' =>'required',
         ]);
-<<<<<<< HEAD
-        $data =  Employee::find($id);
-        $renamePhoto = '';
-=======
-        $data = Employee::find($id);
-        $renamePhoto = "";
->>>>>>> 2e83b72f9b3135f249f8175c01938332d2f9bdc4
-
-        if($request->hasFile('photo')){
-            $photo = $request->file('photo');
-            $renamePhoto = time().'.'.$photo->getClientOriginalExtension();
-            $dest = public_path('/images');
-            $photo->move($dest,$renamePhoto);
-
-            $data->photo=$request->photo;
-        }
-
-        $data->department_id=$request->depart;
-        $data->full_name=$request->full_name;
-        $data->period=$request->period;
-        $data->photo=$renamePhoto;
-        $data->password=$request->password;
-        $data->mobile=$request->mobile;
-        $data->job=$request->job;
-        $data->age=$request->age;
-        $data->status=$request->status;
-        $data->save();
+//<<<<<<< HEAD
+//        $data =  Employee::find($id);
+//        $renamePhoto = '';
+//=======
+//        $data = Employee::find($id);
+//        $renamePhoto = "";
+//>>>>>>> 2e83b72f9b3135f249f8175c01938332d2f9bdc4
+//
+//        if($request->hasFile('photo')){
+//            $photo = $request->file('photo');
+//            $renamePhoto = time().'.'.$photo->getClientOriginalExtension();
+//            $dest = public_path('/images');
+//            $photo->move($dest,$renamePhoto);
+//
+//            $data->photo=$request->photo;
+//        }
+//
+//        $data->department_id=$request->depart;
+//        $data->full_name=$request->full_name;
+//        $data->period=$request->period;
+//        $data->photo=$renamePhoto;
+//        $data->password=$request->password;
+//        $data->mobile=$request->mobile;
+//        $data->job=$request->job;
+//        $data->age=$request->age;
+//        $data->status=$request->status;
+//        $data->save();
 
         return redirect('employee/'.$id.'/edit')->with('msg','Data has been submitted');
     }
