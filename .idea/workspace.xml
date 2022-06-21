@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="790ffe79-359f-4ceb-ab1f-4ddf9e447b5b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/attendance/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/attendance/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/attendance/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/attendance/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/employee/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Employee.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Employee.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/employee/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/employee/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/employee/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +152,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/wamp64/www/attendance system/resources/views/employee&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/wamp64/www/attendance system 01/resources/views&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -156,6 +160,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\attendance system 01\resources\views" />
       <recent name="C:\wamp64\www\attendance system\resources\views\employee" />
       <recent name="C:\wamp64\www\attendance system\resources\views" />
       <recent name="C:\wamp64\wamp64\www\attendance system\resources\views" />
@@ -192,7 +197,12 @@
       <workItem from="1655282024394" duration="4682000" />
       <workItem from="1655290257528" duration="3669000" />
       <workItem from="1655360047082" duration="3873000" />
-      <workItem from="1655363956267" duration="7645000" />
+      <workItem from="1655363956267" duration="9348000" />
+      <workItem from="1655630795291" duration="1719000" />
+      <workItem from="1655637023332" duration="39000" />
+      <workItem from="1655637261549" duration="479000" />
+      <workItem from="1655711942049" duration="13266000" />
+      <workItem from="1655791335370" duration="6056000" />
     </task>
     <servers />
   </component>

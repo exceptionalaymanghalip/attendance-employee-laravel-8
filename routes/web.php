@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\AttendanceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +33,8 @@ Route::resource('depart',DepartmentController::class);
 // EmployeeController
 Route::get('employee/{id}/delete',[EmployeeController::class,'destroy']);
 Route::resource('employee',EmployeeController::class);
+
+
+// AttendanceController
+//Route::get('attendance/{id}/delete',[AttendanceController::class,'destroy']);
+Route::resource('attendance',AttendanceController::class);
